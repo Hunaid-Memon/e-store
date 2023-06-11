@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Main: React.FC = () => {
   return (
-    <div className="container flex justify-between pt-5">
+    <div className="container flex justify-between pt-5 mb-10">
       <div className="pt-9 ">
         <button
           disabled
