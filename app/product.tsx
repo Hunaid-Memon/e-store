@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 
+const Product = () => {
 
-const Products = () => {
+
     return (
       <div className='container mt-10 mb-10'>
         <h6 className="text-blue-600 font-bold text-center p-4">PRODUCTS</h6>
@@ -30,4 +31,4 @@ const Products = () => {
     );
 }
 
-export default Products;
+export default Product;

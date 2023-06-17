@@ -1,6 +1,6 @@
 import Main from "./main";
 import Promotion from "./promotion";
-import Products from "./products";
+import Product from "./product";
 import About from "./about";
 import Subscribe from './subscribe';
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Main />
       <Promotion />
-      <Products />
+      <Product />
       <About />
       <Subscribe />
     </>

@@ -27,8 +27,8 @@ const Navbar = () => {
           />
         </li>
         <li>
-          <Button className="rounded-full bg-gray-100 text-black hover:bg-gray-200">
-            <ShoppingCart className="mr-2 h-4 w-4" />
+          <Button className="rounded-full bg-gray-100 text-black p-3 hover:bg-gray-200">
+            <ShoppingCart className="h-4 w-4" />
           </Button>
         </li>
       </ul>

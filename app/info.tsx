@@ -17,9 +17,9 @@ const Info = () => {
           high quality everyday essentials made.
         </p>
         <div className="flex">
-          <Twitter className="h-9 w-9 fill-black m-2 p-1 bg-gray-200 rounded " />
-          <Facebook className="h-9 w-9 fill-black m-2 p-1 bg-gray-200 rounded " />
-          <Linkedin className="h-9 w-9 fill-black m-2 p-1 bg-gray-200 rounded " />
+          <Twitter className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
+          <Facebook className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
+          <Linkedin className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
         </div>
       </div>
       <div className="w-1/5">
@@ -51,4 +51,4 @@ const Info = () => {
   );
 }
 
-export default Info
+export default Info;
