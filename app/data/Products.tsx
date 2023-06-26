@@ -1,8 +1,10 @@
-const Data = [
+import { product } from "./types";
+
+const Products: product[] = [
   {
     id: 1,
     image: "/image.png",
-    name: "Brushed Raglan Sweatshirt",
+    pname: "Brushed Raglan Sweatshirt",
     type: "Sweater",
     category: "Female",
     price: "$121",
@@ -11,7 +13,7 @@ const Data = [
   {
     id: 2,
     image: "/image0.png",
-    name: "Flex Sweatpants",
+    pname: "Flex Sweatpants",
     type: "Sweater",
     category: "Female",
     price: "$313",
@@ -20,7 +22,7 @@ const Data = [
   {
     id: 3,
     image: "/image1.png",
-    name: "Flex Sweatshirt",
+    pname: "Flex Sweatshirt",
     type: "Pants",
     category: "Female",
     price: "$123",
@@ -29,7 +31,7 @@ const Data = [
   {
     id: 4,
     image: "/image2.png",
-    name: "Raglan Sweatshirt",
+    pname: "Raglan Sweatshirt",
     type: "Sweater",
     category: "Female",
     price: "$113",
@@ -38,7 +40,7 @@ const Data = [
   {
     id: 5,
     image: "/image3.png",
-    name: "Imperial Alpaca Hoodie",
+    pname: "Imperial Alpaca Hoodie",
     type: "Jackets",
     category: "Female",
     price: "$555",
@@ -47,16 +49,16 @@ const Data = [
   {
     id: 6,
     image: "/image4.png",
-    name: "Flex Push Button Bomber",
+    pname: "Flex Push Button Bomber",
     type: "Jackets",
-    category: "male",
+    category: "Male",
     price: "$255",
     description: "Lorem ipsum dolor sit fdex consectetur",
   },
   {
     id: 7,
     image: "/image5.png",
-    name: "Brushed Bomber",
+    pname: "Brushed Bomber",
     type: "Jackets",
     category: "Female",
     price: "$255",
@@ -65,7 +67,7 @@ const Data = [
   {
     id: 8,
     image: "/image6.png",
-    name: "Lite Sweatpants",
+    pname: "Lite Sweatpants",
     type: "Pants",
     category: "Female",
     price: "$205",
@@ -74,7 +76,7 @@ const Data = [
   {
     id: 9,
     image: "/image7.png",
-    name: "Brushed Raglan Sweatshirt",
+    pname: "Brushed Raglan Sweatshirt",
     type: "Sweater",
     category: "Female",
     price: "$239",
@@ -83,7 +85,7 @@ const Data = [
   {
     id: 10,
     image: "/image8.png",
-    name: "Pink Fleece Sweatpants",
+    pname: "Pink Fleece Sweatpants",
     type: "Pants",
     category: "Female",
     price: "$139",
@@ -92,7 +94,7 @@ const Data = [
   {
     id: 11,
     image: "/image9.png",
-    name: "Muscle Tank",
+    pname: "Muscle Tank",
     type: "T Shirts",
     category: "Female",
     price: "$90                                       ",
@@ -100,4 +102,4 @@ const Data = [
   },
 ];
 
-export default Data;
+export default Products;

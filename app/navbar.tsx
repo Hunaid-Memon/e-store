@@ -1,22 +1,36 @@
+'use client'
 import { ShoppingCart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Search } from "lucide-react"
 import { Truck } from "lucide-react";
+import Link from "next/link";
+
+
 
 const Navbar = () => {
   return (
     <nav>
       <ul className="flex justify-between items-center my-5 py-3 container">
-        <li className="flex cursor-pointer">
-          <Truck className="h-7 w-7" />
-          &nbsp;
-          <h4 className="text-xl">E-Store</h4>
-        </li>
+        <Link href={"/"}>
+          <li className="flex cursor-pointer">
+            <Truck className="h-7 w-7" />
+            &nbsp;
+            <h4 className="text-xl">E-Store</h4>
+          </li>
+        </Link>
         <ul className="flex items-center">
-          <li className="mr-6 cursor-pointer">Female</li>
+          <Link href={"/category/Female"}>
+            <li className="mr-6 cursor-pointer">Female</li>
+          </Link>
+          <Link href={"/category/Male"}>
           <li className="mr-6 cursor-pointer">Male</li>
+          </Link>
+          <Link href={"/category/Kids"}>
           <li className="mr-6 cursor-pointer">Kids</li>
-          <li className="mr-6 cursor-pointer">All Products</li>
+          </Link>
+          <Link href={"/products"}>
+            <li className="mr-6 cursor-pointer">All Products</li>
+          </Link>
         </ul>
         <li className="flex">
           <Search className="mr-2 h-5 w-5 mt-2" />

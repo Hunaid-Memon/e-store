@@ -1,7 +1,7 @@
 
 const Footer = () => {
   return (
-    <div className="mt-12 border-t-2 border-black">
+    <div className="mt-12 border-t-2 -0 w-full border-black">
       <div className="container flex justify-between p-5">
         <div>Copyright © 2023 E store</div>
         <div>Design by. Hunaid M Hanif</div>
