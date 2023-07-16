@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
+import { urlForImage } from "@/sanity/lib/image";
 
 
 
 interface ProductItemsProps {
-  id: number
+  id: number | string
   pname: string;
   image: string | StaticImageData;
   type: string;
-  price: string;
+  price: string | number;
 }
 
 
@@ -27,7 +28,13 @@ const ProductItems: React.FC<ProductItemsProps> = ({
       <div className="">
         <Link href={`/products/${id}`}>
           {/* Display menu data */}
-          <Image className="" src={image} alt={pname} width={240} height={240} />
+          <Image
+            className=""
+            src={urlForImage(image).url()}
+            alt={pname}
+            width={240}
+            height={240}
+          />
           <h3 className="text-lg font-bold">{pname}</h3>
           <p>{type}</p>
           <p>{price}</p>
