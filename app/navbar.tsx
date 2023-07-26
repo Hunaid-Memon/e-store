@@ -19,13 +19,13 @@ const Navbar = () => {
           </li>
         </Link>
         <ul className="flex items-center">
-          <Link href={"/category/Female"}>
+          <Link href={"/Female"}>
             <li className="mr-6 cursor-pointer">Female</li>
           </Link>
-          <Link href={"/category/Male"}>
+          <Link href={"/Male"}>
           <li className="mr-6 cursor-pointer">Male</li>
           </Link>
-          <Link href={"/category/Kids"}>
+          <Link href={"/Kids"}>
           <li className="mr-6 cursor-pointer">Kids</li>
           </Link>
           <Link href={"/products"}>

@@ -1,27 +1,20 @@
+// components/ProductItems.tsx
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 
-
-
 interface ProductItemsProps {
-  id: number | string
+  id: number | string;
   pname: string;
   image: string | StaticImageData;
   type: string;
   price: string | number;
 }
 
-
-
 const ProductItems: React.FC<ProductItemsProps> = ({
-  id,
-  pname,
-  image,
-  type,
-  price,
+  product: { id, pname, image, type, price },
 }) => {
   return (
     <div className="p-6">

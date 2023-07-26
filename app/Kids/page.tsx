@@ -13,8 +13,7 @@ interface IProduct {
   price: number;
 }
 
-
-const AllProducts: React.FC< IProduct[]> = async (): Promise<any> => {
+const Kids: React.FC<IProduct[]> = async (): Promise<any> => {
   const result = await getProductData();
   return (
     <div className="container flex flex-wrap mt-12 mb-12">
@@ -26,9 +25,8 @@ const AllProducts: React.FC< IProduct[]> = async (): Promise<any> => {
 };
 
 export const getProductData = async () => {
-  const result = await client.fetch<IProduct[]>(`*[_type=="product"]`) 
-  return result
+  const result = await client.fetch<IProduct[]>(`*[_type == "product" && category=="Kids"]`);
+  return result;
 };
 
-
-export default AllProducts;
+export default Kids;

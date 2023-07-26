@@ -22,13 +22,17 @@ export const product = defineType({
     }),
     defineField({
       name: "category",
-      title: "Product Category",
-      type: "reference",
-      to: [{
-        type: "category"
-      }]
+      title: "Category",
+      type: "string",
+      options: {
+        list: [
+          { title: "Female", value: "Female" },
+          { title: "Male", value: "Male" },
+          { title: "Kids", value: "Kids" },
+        ],
+      },
     }),
-     defineField({
+    defineField({
       name: "image",
       title: "Product Image",
       type: "image",
