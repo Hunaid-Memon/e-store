@@ -5,12 +5,16 @@ import Link from "next/link";
 import { StaticImageData } from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 
-interface ProductItemsProps {
+interface Product {
   _id: number | string;
   pname: string;
-  image: string | StaticImageData;
+  image: string | StaticImageData | any;
   type: string;
   price: string | number;
+}
+
+interface ProductItemsProps {
+  product: Product;
 }
 
 const ProductItems: React.FC<ProductItemsProps> = ({
