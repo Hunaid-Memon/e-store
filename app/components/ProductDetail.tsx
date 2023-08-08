@@ -22,7 +22,7 @@ interface ProductItemsProps {
 const size: string[] = ["XS", "S", "M", "L", "XL"];
 
 const ProductDetail: React.FC<ProductItemsProps> = ({
-  product: { pname, image, type, price },
+  product
 }) => {
   return (
     <>
@@ -30,30 +30,30 @@ const ProductDetail: React.FC<ProductItemsProps> = ({
         {/* left side image */}
         <div className="w-1/12">
           <Image
-            src={urlForImage(image).url()}
+            src={urlForImage(product.image).url()}
             width={120}
             height={120}
-            alt={pname}
+            alt={product.pname}
           />
         </div>
         {/* main div */}
         <div className="w-7/12">
           <Image
-            src={urlForImage(image).url()}
+            src={urlForImage(product.image).url()}
             width={700}
             height={550}
-            alt={pname}
+            alt={product.pname}
           />
         </div>
         {/* detail div */}
         <div className="flex flex-col justify-center w-5/12">
-          <h1 className="text-4xl font-sm">{pname}</h1>
-          <p className="text-gray-500 text-2xl pb-4">{type}</p>
+          <h1 className="text-4xl font-sm">{product.pname}</h1>
+          <p className="text-gray-500 text-2xl pb-4">{product.type}</p>
           <Size size={size} />
           <Quantity />
           <div className="flex items-center">
-            <AddToCard />
-            <p className="pl-9 text-3xl font-bold ">{price}</p>
+            <AddToCard product={product} />
+            <p className="pl-9 text-3xl font-bold ">{product.price}</p>
           </div>
         </div>
 
