@@ -1,4 +1,3 @@
-// components/ProductItems.tsx
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,20 +21,19 @@ const ProductItems: React.FC<ProductItemsProps> = ({
 }) => {
   return (
     <div className="p-6">
-      <div className="">
+      <div className="bg-white p-4 rounded-md shadow-md hover:shadow-lg">
         <Link href={`/products/${_id}`}>
-          {/* Display menu data */}
           <Image
-            className=""
+            className="mx-auto"
             src={urlForImage(image).url()}
             alt={pname}
             width={240}
             height={240}
           />
-          <h3 className="text-lg font-bold">{pname}</h3>
-          <p>{type}</p>
-          <p>{price}</p>
         </Link>
+        <h3 className="mt-2 text-lg font-bold">{pname}</h3>
+        <p className="text-gray-500">{type}</p>
+        <p className="mt-1 font-semibold text-purple-600">{price}</p>
       </div>
     </div>
   );

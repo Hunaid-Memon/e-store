@@ -6,9 +6,11 @@ const ProductInformation = () => {
         <h1 className="text-2xl font-bold py-12">Product Information</h1>
         <p className="text-9xl font-bold absolute opacity-5">Overview</p>
       </div>
-      <div className="flex">
-        <h3 className=" font-semibold w-4/12">PRODUCT DETAILS</h3>
-        <p className="w-8/12 tracking-widest">
+      <div className="flex flex-col md:flex-row">
+        {" "}
+        {/* Responsive flex layout */}
+        <h3 className="font-semibold md:w-4/12">PRODUCT DETAILS</h3>
+        <p className="md:w-8/12 tracking-widest">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
           sit distinctio impedit. Fuga consequatur molestias perspiciatis
           expedita animi? Dignissimos numquam unde iste voluptate voluptatem
@@ -18,9 +20,11 @@ const ProductInformation = () => {
           consequuntur? Enim, temporibus!
         </p>
       </div>
-      <div className="flex">
-        <h3 className="font-semibold w-4/12">PRODUCT CARE</h3>
-        <ul className="w-8/12 list-disc tracking-widest">
+      <div className="flex flex-col md:flex-row">
+        {" "}
+        {/* Responsive flex layout */}
+        <h3 className="font-semibold md:w-4/12">PRODUCT CARE</h3>
+        <ul className="md:w-8/12 list-disc tracking-widest">
           <li>Hand wash using cold water.</li>
           <li>Do not using bleach.</li>
           <li>Hang it to dry.</li>

@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 import { Truck } from "lucide-react";
 import { Twitter, Facebook, Linkedin } from "lucide-react";
 
-
 const Info = () => {
   return (
-    <div className="container flex pt-12 pb-12 mb-12">
-      <div className="w-3/5 pr-12 ">
+    <div className="container flex flex-col lg:flex-row pt-12 pb-12 mb-12">
+      <div className="lg:w-3/5 pr-12">
         <div className="flex pb-8 font-bold">
           <Truck className="h-10 w-11" />
           &nbsp;
@@ -17,12 +16,12 @@ const Info = () => {
           high quality everyday essentials made.
         </p>
         <div className="flex">
-          <Twitter className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
-          <Facebook className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
-          <Linkedin className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded " />
+          <Twitter className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded" />
+          <Facebook className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded" />
+          <Linkedin className="h-9 w-9 fill-black m-2 p-2 bg-gray-100 rounded" />
         </div>
       </div>
-      <div className="w-1/5">
+      <div className="w-full lg:w-1/5">
         <h3 className="text-2xl font-bold pb-4">Company</h3>
         <ul>
           <li className="pb-2">About</li>
@@ -32,7 +31,7 @@ const Info = () => {
           <li>Contact Us</li>
         </ul>
       </div>
-      <div className="w-1/5">
+      <div className="w-full lg:w-1/5">
         <h3 className="text-2xl font-bold pb-4">Support</h3>
         <ul>
           <li className="pb-2">Support Center</li>
@@ -40,7 +39,7 @@ const Info = () => {
           <li className="pb-2">Quick Chat</li>
         </ul>
       </div>
-      <div className="w-1/5">
+      <div className="w-full lg:w-1/5">
         <h3 className="text-2xl font-bold pb-4">Contact</h3>
         <ul>
           <li className="pb-2">Whatsapp</li>
@@ -49,6 +48,6 @@ const Info = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Info;
