@@ -1,7 +1,7 @@
 const Subscribe = () => {
   return (
     <div className="flex flex-col items-center mt-12 p-6 sm:p-12 mb-12 relative">
-      <div className="absolute text-4xl sm:text-9xl font-bold opacity-50">
+      <div className="absolute text-4xl sm:text-9xl font-bold opacity-5">
         Newsletter
       </div>
       <h1 className="text-2xl sm:text-4xl font-bold pb-2 sm:pb-3">
@@ -16,7 +16,7 @@ const Subscribe = () => {
           type="email"
           placeholder="Enter your email address"
         />
-        <button className="bg-black text-white p-2 sm:p-1 sm:pl-2 sm:pr-2 text-base sm:text-lg mt-2 sm:mt-0">
+        <button className="bg-black rounded text-white p-2 sm:p-1 sm:pl-2 sm:pr-2 text-base sm:text-lg mt-2 sm:mt-0">
           Get Started
         </button>
       </form>

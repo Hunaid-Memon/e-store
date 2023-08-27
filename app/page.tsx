@@ -1,8 +1,8 @@
-import Main from "./main";
-import Promotion from "./promotion";
-import Product from "./product";
-import About from "./about";
-import Subscribe from "./subscribe";
+import Main from "./main/main";
+import Promotion from "./main/promotion";
+import Product from "./main/product";
+import About from "./main/about";
+import Subscribe from "./main/subscribe";
 
 export default async function Home() {
  

@@ -5,11 +5,12 @@ import AddToCard from "./AddToCard";
 import Quantity from "./Quantity";
 import ProductInformation from "./ProductInformation";
 import Size from './Size'
+import { StaticImageData } from "next/image";
 
 interface Product {
   id: number;
   pname: string;
-  image: string;
+  image: string | StaticImageData | any;
   type: string;
   price: string;
 }
